@@ -8,6 +8,14 @@ class studentCreate(BaseModel):
     address:str
     email:str
 
+#Schema fro student update
+class studentUpdate(BaseModel):
+    name: Optional[str] = None
+    age: Optional[int] = None
+    address: Optional[str] = None
+    email: Optional[str] = None
+    is_active: Optional[bool] = None
+
 #api response schema backend to frontend communication
 class studentResponse(BaseModel):
     id:int
